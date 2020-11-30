@@ -146,6 +146,9 @@
           swal("Slot has been booked successfully and confirmation email is sent");
           $("#trialForm").trigger("reset");
           $("button").prop("disabled", false);
+        }else{
+          swal("An Error Occured Please try again!");
+          $("button").prop("disabled", false);
         }
       });
     });
